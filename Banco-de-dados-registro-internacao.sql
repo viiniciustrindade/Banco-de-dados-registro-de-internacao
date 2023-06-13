@@ -1,10 +1,9 @@
 Create Table mvtHospRegInt(
-codInternacao int identity primary key,
+codProntuario int identity primary key,
 codPaciente int not null,
-prontuario int not null,
-dataEntrada date not null,
+dataEntrada datetime not null,
 horaEntrada time not null,
-dataSaida date not null,
+dataSaida datetime not null,
 horaSaidade time not null,
 CNS varchar(20) not null,
 clinicaMedica varchar(100) not null,
