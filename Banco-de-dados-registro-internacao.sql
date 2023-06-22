@@ -14,9 +14,6 @@ hipoteseDiagnostica varchar(500) not null,
 medico varchar(50) not null,
 CRM varchar(20) not null,
 diagnostico varchar(500) not null,
-situacao varchar(12) not null,
+situacao varchar(20) not null,
 foreign key (codPaciente) references mvtHospCadPac
 );
-
-
-ALTER TABLE mvtHospRegInt ALTER COLUMN situacao varchar(20) not null;
